@@ -51,7 +51,6 @@ class SparseMatrix:
         if self.rows != other.rows or self.cols != other.cols:
             raise ValueError(
                 "Matrices must have the same dimensions for addition")
-
         result = SparseMatrix(self.rows, self.cols)
         for row in range(self.rows):
             for col in range(self.cols):
